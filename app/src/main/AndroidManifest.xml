@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.library">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bnaeirtlibrary">
+
+    <uses-sdk />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Library">
-        <activity android:name=".AHomeActivity"></activity>
-        <activity android:name=".AForgetPasswordActivity" />
-        <activity android:name=".ALoginActivity" />
-        <activity android:name=".KForgotActivity"></activity>
-        <activity android:name=".KSihnupActivity" />
-        <activity android:name=".KLoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.bnaeirtlibrary.HelpCenterActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.bnaeirtlibrary.InformationsAndSetting" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.LandingPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bnaeirtlibrary.BooksViewer" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.UserEditAccount" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.Userinformations" android:screenOrientation="portrait"/>
+        <activity android:name="com.bnaeirtlibrary.BookActivityPage" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.AHomeActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.AForgetPasswordActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.ALoginActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.KForgotActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.KSihnupActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.KLoginActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.bnaeirtlibrary.MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
