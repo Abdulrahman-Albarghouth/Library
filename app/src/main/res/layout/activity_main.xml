@@ -5,51 +5,56 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="492dp"
-        android:layout_height="830dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505"
-        app:srcCompat="@drawable/book" />
-
-    <Button
-        android:id="@+id/btAdmin"
-        android:layout_width="160dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="371dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:layout_marginBottom="295dp"
-        android:background="@drawable/buton"
-        android:text="Admin"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btKullanicilar"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@drawable/screenshotb"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btKullanicilar"
-        android:layout_width="160dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="371dp"
-        android:layout_marginBottom="295dp"
-        android:background="@drawable/buton"
-        android:text="Kullanıcılar"
-        android:textColor="@color/white"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_border"
+        android:text="Start"
+        android:textColor="?attr/colorSurface"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO BN-AEIRT "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+    <TextView
+        android:id="@+id/deplacement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BN de l'association des étudiants ivoiriens residents en Turquie"
+        android:textColor="@color/material_on_primary_emphasis_high_type"
+        android:textSize="10sp"
+
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btKullanicilar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.038" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

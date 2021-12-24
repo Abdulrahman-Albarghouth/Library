@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg_1"
+    tools:context=".UserEditAccount">
+
+    <EditText
+        android:id="@+id/newnumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/mybuton_border"
+        android:ems="10"
+        android:hint="New Number"
+        android:inputType="phone"
+        android:textColor="@color/design_default_color_surface"
+        android:textColorHint="@color/material_on_primary_emphasis_medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <EditText
+        android:id="@+id/editextfullname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/mybuton_border"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/design_default_color_surface"
+        android:textColorHint="@color/material_on_primary_emphasis_medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442" />
+
+    <EditText
+        android:id="@+id/oldnumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/mybuton_border"
+        android:ems="10"
+        android:hint="Old Number"
+        android:inputType="phone"
+        android:textColor="@color/design_default_color_surface"
+        android:textColorHint="@color/material_on_primary_emphasis_medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editextfullname"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <Button
+        android:id="@+id/accountEditBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/signbtnborder"
+        android:backgroundTint="#ff5722"
+        android:hint="Click"
+        android:onClick="editeUserAccount"
+        android:textColor="@color/logimaj_background"
+        android:textColorHint="@color/logimaj_background"
+        android:textColorLink="@color/logimaj_background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newnumber"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Let's Edite Your Account"
+        android:textColor="@color/logimaj_background"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editextfullname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
